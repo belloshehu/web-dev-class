@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            background-color: bisque;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 70%;
+            position: absolute;
+            transition: all 0.5s ease-in;
+        }
+        body{
+            padding: 5% 10%;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        button {
+            padding: 10px 20px;
+            font-weight: bolder;
+            width: 45%;
+            color: white;
+            background-color: black;
+            font-size: large;
+            border-radius: 20px;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+        }
+        @media screen and (max-width: 498px) {
+            .wrapper{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }   
+        }
+        div.container div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 2%;
+        }
+        div.container{
+            display: inline-block;
+            border: 2px dotted black;
+            padding: 5%;
+            border-radius: 20px;
+            
+        }
+        button#reset {
+            background-color: red;
+        }
+        button#save{
+            background-color: green;
+        }
+        input { 
+            border-radius: 20px;
+            text-align: center;
+            width: 25%;
+        }
+        h2{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Counter</h1>
+    <article>Welcome back!</article>
+    <div class="wrapper">
+        <div class="container">
+            <div>
+                <h2>0</h2>
+                <input value="0" type="number" placeholder="Limit" id="limit">
+                <input value="1" type="number" placeholder="Limit" id="step">
+            </div>
+            <div>
+                <button id="plus">+</button>
+                <button id="minus">-</button>
+            </div>
+        </div>
+        <div>
+            <button id="reset">Reset</button>
+            <button id="save">Save</button>
+        </div>
+    </div>
+    <script src="./counter.js"></script>
+</body>
+</html>
