@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            padding: 5% 10%;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        div.container{
+            padding: 5%;
+            background-color: black;
+            color: white;
+        }
+        div.container div {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        h2{
+            background-color: white;
+            color: red;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        button{
+            font-size: large;
+            font-weight: bolder;
+            padding: 20px;
+            width: 22%;
+        }
+        input{
+            padding: 10px;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div>
+            <input value="0" placeholder="Enter first number" id="first-number" type="number">
+            <input value="0" placeholder="Enter second number" id="second-number" type="number">
+        </div>
+        <h2></h2>
+        <hr>
+        <div>
+            <button id="plus">+</button>
+            <button id="minus">-</button>
+            <button id="times">*</button>
+            <button id="division">/</button>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>

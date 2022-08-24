@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 5% 10%;
+        }
+        input{
+            padding: 10px 5px;
+            border-radius: 10px;
+            outline: none;
+        }
+        header{
+            padding: 2% 1%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            background-color: bisque;
+            margin-bottom: 10px;
+            align-items: center;
+            color: red;
+        }
+        main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: bisque;
+            min-height: 60vh;
+        }
+        article{
+            background-color: goldenrod;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        @media (max-width:699px) {
+            main{
+                grid-template-columns: 1fr;
+            }
+            header{
+                justify-content: space-between;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eStore</h1>
+        <form action="">
+            <input type="text" placeholder="search product">
+        </form>
+    </header>
+    <main>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
