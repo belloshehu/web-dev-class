@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: auto;
+}
+
+form{
+    padding: 40px;
+    color: black;
+    margin: auto;
+    background-color: white;
+}
+main h1{
+    color: black;
+    font-family: forte;
+    text-align: center;
+}
+
+
+form div label {
+    display: block;
+}
+
+form div{
+    margin: 20px 0px;
+}
+
+input{
+    width: 100%;
+}

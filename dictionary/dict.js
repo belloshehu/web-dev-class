@@ -7,6 +7,7 @@ let explanationElement = document.querySelector('#explanation')
 form.onsubmit = (e)=>{
     e.preventDefault(true)
     let userWord = document.querySelector('#user-word').value
+    console.log(userWord, getWord(userWord))
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${userWord}`)
     .then((jsonResponse)=>{
         return jsonResponse.json();
@@ -39,4 +40,11 @@ timesIcon.onclick = (e)=>{
 const recentBtn = document.querySelector('button.fas-bars')
 recentBtn.onclick = (e)=>{
     aside.style.transform = 'translateY(0%)'
+}
+
+async function getWord(word){
+    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    const data = await res.json()
+    return data
+    
 }

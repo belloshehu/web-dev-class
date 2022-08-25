@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 5% 10%;
+}
+input{
+    padding: 10px 5px;
+    border-radius: 10px;
+    outline: none;
+}
+header{
+    padding: 2% 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: bisque;
+    margin-bottom: 10px;
+    align-items: center;
+    color: red;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: bisque;
+    min-height: 60vh;
+}
+article{
+    background-color: goldenrod;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+article div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+article button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+article h1{
+    color: green;
+}
+article img{
+    border-radius: 20px;
+}
+@media (max-width:699px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    header{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+}
+
+body#dashboard{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-areas: 'header header' 'aside main';  
+    gap: 5px; 
+}
+
+aside{
+    grid-area: aside;
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+aside button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+aside h4{
+    color: black;
+}
+body#dashboard main {
+    grid-area: main;
+}
+header#dashboard {
+    grid-area: header;
+}
+
+.btn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
