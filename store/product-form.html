@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new product</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./form-style.css">
+</head>
+<body>
+    <header>
+        <h1>eStore</h1>
+    </header>
+    <main>
+        <h1>New product</h1>
+        <form action="">
+            <small></small>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Product name">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" placeholder="Product price">
+            </div>
+            <div>
+                <label for="price">Description</label>
+                <textarea 
+                    cols="50" 
+                    rows="10" 
+                    placeholder="product description" 
+                    name="description" id="description"
+                ></textarea>
+            </div>
+
+            <div id="preview-wrapper">
+                <img src="" alt="review-image" id="preview">
+            </div>
+
+            <div>
+                <label for="image">Upload Image</label>
+                <input type="file" name="image" id="image" accept="image/*">
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </main>
+    <script src="./product-form.js"></script>
+</body>
+</html>
