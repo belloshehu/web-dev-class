@@ -19,7 +19,7 @@ body {
 
 main{
     grid-area: main;
-    background-color: orange;
+    background-color: indigo;
     padding: 1% 5%;
     border-radius: 20px;
     display: grid;
