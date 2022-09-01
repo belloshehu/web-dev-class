@@ -101,3 +101,19 @@ header#dashboard {
     color: white;
     width: 100%;
 }
+header div a{
+    margin: 0px 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: indigo;
+}
+
+header div a {
+    padding: 10px 15px; 
+}
+
+header div a:hover {
+    background-color: rgba(200, 200, 200, 0.6); 
+}
