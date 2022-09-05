@@ -33,6 +33,10 @@ let trial = 0
 let numberOfItems = imageWrappers.length;
 
 function translateY(count = 1){
+    // TODO: 
+    // MOdifiy the code such that pointer points at the center of a random item
+    // set the y position of pointer to the y position of the random item
+    
     // move pointer to the bottom
     pointer.style.transform = `translateY(${height - 50}px)`
     // transform: translateY(height);
