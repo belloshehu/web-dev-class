@@ -8,6 +8,9 @@ const h1 = document.querySelector('article.image-wrapper h1')
 // image wrapper items
 let imageWrappers = document.querySelectorAll('.image-wrapper')
 
+// position ointer to the center of the first item
+
+
 // score h1
 const scoreH1 = document.querySelector('aside #score')
 
@@ -38,14 +41,17 @@ function translateY(count = 1){
     // set the y position of pointer to the y position of the random item
     
     // move pointer to the bottom
-    pointer.style.transform = `translateY(${height - 50}px)`
-    // transform: translateY(height);
+    let wrapperHeight = imageWrappers[count - 1].getBoundingClientRect().height
+    let lastItemY = imageWrappers[imageWrappers.length - 1].getBoundingClientRect().y
+    pointer.style.transform = `translateY(${lastItemY + (wrapperHeight/2) - 50}px)`
+
     setTimeout(()=>{
-        pointer.style.transform = `translateY(${
-            (imageWrapperHeight * count) - ((imageWrapperHeight + 25) / 2)
-        }px)`
+        let wrapperY = imageWrappers[count - 1].getBoundingClientRect().y
+        pointer.style.transform = `translateY(${wrapperY}px)`
+        console.log(wrapperHeight, wrapperY)
     }, 1000)
 }
+
 
 function playGame(e){
     displayH2[0].innerHTML = `You selected ${selectionInput.value}`
@@ -99,6 +105,8 @@ function playGame(e){
 
             // change bakground color to red and back to white
             imageWrappers[count - 1].style.backgroundColor = 'red'
+            // let h = imageWrappers[count - 1].getBoundingClientRect().height
+            // console.log('height: ', h)
             setTimeout(()=>{
                 imageWrappers[count - 1].style.backgroundColor = 'white'
             }, 1000)

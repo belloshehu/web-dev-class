@@ -25,6 +25,7 @@ main{
     display: grid;
     grid-template-columns: 6fr 2fr;
     gap: 5px;
+    height: fit-content;
 }
 aside{
     grid-area: aside;
