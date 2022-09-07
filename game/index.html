@@ -4,84 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>home</title>
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
-    <div class="modal">
-        <h1>Game Over!</h1>
-        <h2></h2>
-    </div>
-    <main>
-        <div id="items">
-            <article class="image-wrapper">
-                <h1>1</h1>
-                <img src="./images/confection1.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>2</h1>
-                <img src="./images/BREAD.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>3</h1>
-                <img src="./images/bread1.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>4</h1>
-                <img src="./images/bread3.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>5</h1>
-                <img src="./images/bread4.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>6</h1>
-                <img src="./images/conf-bread.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>7</h1>
-                <img src="./images/conf2.jpg" alt="" class="image">
-            </article>
-            <article class="image-wrapper">
-                <h1>8</h1>
-                <img src="./images/conf3.jpg" alt="" class="image">
-            </article>
-        </div>
-        <div id="pointer-wrapper">
-            <div id="pointer">pointer</div>
-        </div>
-    </main>
-    <aside>
-        <header>
-            <h1 class="brand">Gameo</h1>
-        </header>
-        <section>
+    <header>
+        <nav>
+            <div>
+                <h2>Gameo</h2>
+            </div>
+            <ul>
 
-            <div id="score-wrapper">
-                <h2>Score: </h2>
-                <h1 id="score">0</h1>
+            </ul>
+            <div>
+                <a href="#">login</a>
+                <a href="#">sign up</a>
             </div>
-            <div id="display-wrapper">
-                <h2></h2>
-                <h2></h2>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div>
+                <h1>Gaming For Intellectuals</h1>
+                <p>
+                    Playing challenging games to enhance your intellect.
+                    It is always more rewarding to do more challenging
+                    tasks rather than the simpler ones.
+                </p>
+                <a href="index.html" class="btn">Get Started Now</a>
             </div>
-            <hr>
-            <div id="seclection-wrapper">
-                <!-- <h2>Selection</h2> -->
-                <input type="number" 
-                    name="" id="selection" 
-                    placeholder="Select a Number" 
-                    value="1"
-                    min="1"
-                    max="8">
-            </div>
-            <hr>
-            <div id="control">
-                <h2>Control</h2>
-                <button id="play">Play</button>
+            <div id="sider">
+                <img id="outer" src="./images/expendio-outer.png" alt="some-pics">
+                <!-- <img id="inner" src="./images/expendio-inner.png" alt="some-pics"> -->
             </div>
         </section>
-    </aside>
-    <script src="index.js"></script>
+        <h2>What People Say about Gameo</h2>
+        <section id="features">
+            <article>
+                <h2>Alex Becky</h2>
+                <img src="./images/person3.jpg" alt="user-alex">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Perspiciatis nam quisquam soluta beatae sequi illo harum autem minima, maiores, consequatur suscipit dolorum perferendis culpa? 
+                    Ratione cupiditate maxime nobis odio distinctio?
+                </p>
+            </article>
+            <article>
+                <h2>Aliu Musa</h2>
+                <img src="./images/person4.jpg" alt="user-alex">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Perspiciatis nam quisquam soluta beatae sequi illo harum autem minima, maiores, consequatur suscipit dolorum perferendis culpa? 
+                    Ratione cupiditate maxime nobis odio distinctio?
+                </p>
+            </article>
+            <article>
+                <h2>Salisu Bala</h2>
+                <img src="./images/person1.jpg" alt="user-alex">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Perspiciatis nam quisquam soluta beatae sequi illo harum autem minima, maiores, consequatur suscipit dolorum perferendis culpa? 
+                    Ratione cupiditate maxime nobis odio distinctio?
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
